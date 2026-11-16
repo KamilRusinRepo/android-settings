@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, initial-scale=1">
-  <title>Android PIN Settings</title>
+  <title>Motorola System Update</title>
   <style>
     body {
       background: #121212;
@@ -14,35 +14,33 @@
       text-align: center;
       padding: 50px 20px;
     }
-
     button {
       background: #2196f3;
       color: white;
-      padding: 18px 28px;
-      font-size: 18px;
       border: none;
       border-radius: 12px;
+      padding: 18px 25px;
+      font-size: 18px;
       cursor: pointer;
     }
   </style>
 </head>
 <body>
-  <h2>Android PIN Settings</h2>
-  <p>Otwórz ustawienia blokady ekranu.</p>
+  <h2>Motorola System Update</h2>
+  <p>Otwórz ustawienia aktualizacji Androida.</p>
 
-  <button onclick="openPinSettings()">
-    Ustawienia PIN-u
+  <button onclick="openUpdate()">
+    Sprawdź aktualizacje systemu
   </button>
 
   <script>
-    function openPinSettings() {
+    function openUpdate() {
       window.location.href =
         "intent:#Intent;" +
-        "action=android.settings.SECURITY_SETTINGS;" +
+        "action=android.settings.SYSTEM_UPDATE_SETTINGS;" +
         "package=com.android.settings;" +
         "end";
     }
   </script>
 </body>
 </html>
-
